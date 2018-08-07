@@ -1,0 +1,16 @@
+<div>
+	<h1 class="heading1">Let's Read Some Phenom Articles!</h1>
+
+	<%= link_to "Add Article",  new_article_path, class:"btn btn-warning" %>
+
+	<ol class="number_styling">
+	<% @articles.each do |article| %>
+		<li>
+			<p class="title"><%= link_to article.title, article %></p>
+			<p class="text"><%= article.content %></p> 
+		</li>
+		<% end %>
+	</ol>
+</div>
+ 
+

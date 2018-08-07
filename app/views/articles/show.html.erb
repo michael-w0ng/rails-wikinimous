@@ -1,0 +1,9 @@
+<h2>Look who got sucked in by my dope clickbait titles!!</h2>
+
+<p class="content"><%= @article.content %></p>
+
+<p><%= link_to "Back to Clickbait", articles_path %></p>
+<p><%= link_to "Change these excellent prose?", edit_article_url  %></p>
+<p><%= link_to "Done with this crappy text? Delete!", article_path(@article), method: :delete %></p>
+
+
